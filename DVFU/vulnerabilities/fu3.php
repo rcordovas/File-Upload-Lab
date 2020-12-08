@@ -28,7 +28,7 @@
        <h3>Damn Vulnerable File Upload</h3>
        <b>Description</b>
        <p>-Goal for this level is about to upload a file.This program restriced php files but forget something to restrict!</p>
-       <div class="card  teal lighten-1">
+       <div class="card light-green lighten-5">
             <div class="card-content white-text">
               <span class="card-title">Level 3</span>
               <?php
@@ -53,9 +53,11 @@
           </div>
 		  <div class="shell">
 			<?php
+			if isset($_FILES) {
 			echo "Mode debug info:<pre>";
 			print_r($_FILES);
 			echo "</pre>";
+			}
 			?>
 		  </div>
 			<style>
@@ -63,7 +65,8 @@
 				width: 860px;
 				padding: 20px;
 				float: left;
-				background: #FFF;
+				background: #000;
+				color: #FFF;
 			}
 			</style>
      </div>
