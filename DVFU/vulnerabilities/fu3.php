@@ -30,7 +30,6 @@
        <p>-Goal for this level is about to upload a file.This program restriced php files but forget something to restrict!</p>
 		<div class="card grey darken-3">
 		<div class="card-content white-text">
-            <div class="blue-text text-darken-3">
               <span class="card-title"><h5>Level 3</h5></span><br/>
               <?php
 					$folder = "uploads/";
@@ -46,7 +45,6 @@
                     }
                     echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><input type=submit value="Upload File"></form><br/><br/>';
                 ?>
-            </div>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
             </div>
