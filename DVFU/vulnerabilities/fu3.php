@@ -75,18 +75,14 @@
 
 	.custom-file-input::before {
 		content: 'Select some files';
+		background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
 		display: inline-block;
-		background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
-		border: 1px solid #999;
-		border-radius: 3px;
-		padding: 5px 8px;
-		outline: none;
-		white-space: nowrap;
-		-webkit-user-select: none;
-		cursor: pointer;
-		text-shadow: 1px 1px #fff;
-		font-weight: 700;
-		font-size: 10pt;
+		font-size: 16px;
 	}
 
 	.custom-file-input:hover::before {
