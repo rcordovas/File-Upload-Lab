@@ -44,7 +44,7 @@
 
                     }
 
-                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><input type=submit value="Upload File"></form>';
+                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><input type=submit value="Upload File"></form>'; 
                 ?>
             </div>
             <div class="card-action">
