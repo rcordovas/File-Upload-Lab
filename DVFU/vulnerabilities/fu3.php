@@ -51,11 +51,21 @@
               <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "Format not support!<br/>";} ?>
             </div>
           </div>
+		  <div class="shell">
 			<?php
 			echo "Mode debug info:<pre>";
 			print_r($_FILES);
 			echo "</pre>";
 			?>
+		  </div>
+			<style>
+			.shell {
+				width: 860px;
+				padding: 20px;
+				float: left;
+				background: #FFF;
+			}
+			</style>
      </div>
 
    </div>
