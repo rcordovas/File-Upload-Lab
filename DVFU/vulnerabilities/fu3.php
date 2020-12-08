@@ -29,7 +29,7 @@
        <b>Description</b>
        <p>-Goal for this level is about to upload a file.This program restriced php files but forget something to restrict!</p>
             <div class="blue-text text-darken-3">
-              <span class="card-title"><h2>Level 3</h2></span><br/>
+              <span class="card-title"><h4>Level 3</h4></span><br/>
               <?php
 					$folder = "uploads/";
                     $files = @$_FILES["files"];
@@ -47,7 +47,7 @@
                 ?>
             </div>
             <div class="card-action">
-              <?php if (isset($_FILES)) { if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
+              <?php if (isset($files["name"])) { if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
             </div>
 		  <div class="card grey darken-3">
 			<div class="card-content white-text">
