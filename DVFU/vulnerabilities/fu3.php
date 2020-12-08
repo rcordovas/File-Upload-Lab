@@ -48,8 +48,9 @@
             ?>
 			<form enctype="multipart/form-data" action="fu3.php" method="POST">
                 <input name="files" type="file" class="custom-file-input"/><br/><br/>
-                <input type="submit" value="Upload File" class="custom-file-input"/>
+                <input type="submit" value="Upload File"/>
 			</form>
+			<br/><br/>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
             </div>
@@ -73,7 +74,7 @@
 		visibility: hidden;
 	}
 
-	.custom-file-input::before {
+	input[type=submit], .custom-file-input::before {
 		content: 'Select some files';
 		background-color: #4CAF50; /* Green */
 		border: none;
@@ -85,11 +86,11 @@
 		font-size: 14px;
 	}
 
-	.custom-file-input {
+	input[type=submit], .custom-file-input::before  {
 		transition-duration: 0.4s;
 	}
 
-	.custom-file-input:hover {
+	input[type=submit] :hover, .custom-file-input::before :hover {
 		background-color: white; /* Green */
 		color: #4CAF50;
 	}
