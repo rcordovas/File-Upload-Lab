@@ -55,12 +55,13 @@
                   ?>
               <?php if($uploadfile!= '') { echo "<a href=\"$uploadfile\">Uploaded</a>"; } ?>
             </div>
-          </div>
-			<?php
+						<?php
 			echo "Mode debug info:<pre>";
 			print_r($_FILES);
 			echo "</pre>";
 			?>
+          </div>
+
      </div>
 
    </div>
