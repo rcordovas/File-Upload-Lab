@@ -44,7 +44,7 @@
                     }
 
                     }
-                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><br/><br/><input type=submit value="Upload File"></form><br/><br/>';
+                    echo '<form method=POST enctype="multipart/form-data" action=""><div class="file-field input-field"><div class="btn"><input type="file" name="files"></div><br/><div class="btn"><input type=submit value="Upload File"></div></div></form><br/><br/>';
                 ?>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
