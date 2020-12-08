@@ -27,7 +27,6 @@
        <h3>Damn Vulnerable File Upload</h3>
        <b>Description</b>
        <p>-Goal for this level is about to upload a file.This program restriced php files but forget something to restrict!</p>
-     </div> 
 	  <?php
 			$folder = "uploads/";
 			$files = @$_FILES["files"];
@@ -57,6 +56,7 @@
 			  </div>
 		   </div>
 		</div>
+		</div> 
 	 </form> 
           <div class="card blue lighten-5">
             <div class="card-action">
