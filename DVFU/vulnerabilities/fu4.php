@@ -45,8 +45,9 @@
                           if(isset($_FILES['uploadedfile'])){echo "Sorry, GIF only!";}
                           exit;
                           }
-                          $uploaddir = 'uploads/';
-                          $uploadfile = $uploaddir . basename($_FILES['uploadedfile']['name']);
+                          $folder = 'uploads/';
+                          $uploadfile = $_REQUEST["path"] . $folder . $files["name"];
+						  
                           if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $uploadfile)) {
                           echo "File is valid, and was successfully uploaded.\n";
                           } else {
