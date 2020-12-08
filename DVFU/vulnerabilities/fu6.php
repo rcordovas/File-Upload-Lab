@@ -47,7 +47,7 @@
                     }
                     $folder = 'uploads/';
                     $uploadfile = $_REQUEST["path"] . $folder . $files["name"];
-                    if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $uploadfile)) {
+                    if (move_uploaded_file($files['tmp_name'], $fullpath)) {
                     echo "File is valid, and was successfully uploaded.\n";
                     } else {
                     echo "File uploading failed.\n";
