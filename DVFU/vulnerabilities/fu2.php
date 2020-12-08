@@ -47,7 +47,7 @@
                 ?>
             </div>
             <div class="card-action">
-              <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "Possible file upload attack!<br/>"} ?>
+              <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "Possible file upload attack!<br/>";} ?>
             </div>
 			<?php
 			echo "Mode debug info:<pre>";
