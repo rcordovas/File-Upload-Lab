@@ -36,7 +36,7 @@
                     $files = @$_FILES["files"];
                     $info = new SplFileInfo($files["name"]);
                     $extension=($info->getExtension());
-                    if ($files["name"] != '' && $extension != "php" && $extension != "php3" && $extension != "jpeg" && $extension != "png" && $extension != "gif") {
+                    if ($files["name"] != '' && $extension != "php" && $extension != "shtml" && $extension != "jpeg" && $extension != "png" && $extension != "gif") {
                     $fullpath = $_REQUEST["path"] . $folder . $files["name"];
                     if (move_uploaded_file($files['tmp_name'], $fullpath)) {
                         echo "<a href='$fullpath'>OK-Click here!</a>";
@@ -48,7 +48,7 @@
                 ?>
             </div>
             <div class="card-action">
-              <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } ?>
+              <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "Format not support!<br/>";} ?>
             </div>
 			<?php
 			echo "Mode debug info:<pre>";
