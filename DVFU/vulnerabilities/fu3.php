@@ -29,7 +29,7 @@
        <b>Description</b>
        <p>-Goal for this level is about to upload a file.This program restriced php files but forget something to restrict!</p>
             <div class="blue-text text-darken-3">
-              <span class="card-title"><h4>Level 3</h4></span><br/>
+              <span class="card-title"><h5>Level 3</h5></span><br/>
               <?php
 					$folder = "uploads/";
                     $files = @$_FILES["files"];
@@ -42,8 +42,7 @@
                     }
 
                     }
-
-                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><input type=submit value="Upload File"></form>';
+                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><input type=submit value="Upload File"></form><br/><br/>';
                 ?>
             </div>
             <div class="card-action">
@@ -61,6 +60,7 @@
 			</div>
 		  </div>
      </div>
+	 
 
    </div>
 
