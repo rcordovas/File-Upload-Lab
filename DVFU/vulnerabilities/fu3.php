@@ -28,7 +28,6 @@
        <h3>Damn Vulnerable File Upload</h3>
        <b>Description</b>
        <p>-Goal for this level is about to upload a file.This program restriced php files but forget something to restrict!</p>
-       <div class="card blue lighten-5">
             <div class="blue-text text-darken-3">
               <span class="card-title">Level 3</span>
               <?php
@@ -50,7 +49,6 @@
             <div class="card-action">
               <?php if (isset($_FILES)) { if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "Format not support!<br/>";} } ?>
             </div>
-          </div>
 		  <div class="card grey darken-3">
 			<div class="card-content white-text">
 			<?php
