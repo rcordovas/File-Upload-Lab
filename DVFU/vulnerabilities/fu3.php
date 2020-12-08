@@ -68,7 +68,11 @@
      </div>
    </div>
 </div>
-	<style>
+<style>
+	.custom-file-input::-webkit-file-upload-button {
+		visibility: hidden;
+	}
+
 	.custom-file-input::before {
 		content: 'Select some files';
 		background-color: #4CAF50; /* Green */
@@ -81,13 +85,14 @@
 		font-size: 14px;
 	}
 
-	.custom-file-input:hover::before {
-		border-color: black;
+	.custom-file-input {
+		transition-duration: 0.4s;
 	}
 
-	.custom-file-input:active::before {
-		background-color: #4CAF50;
+	.custom-file-input:hover {
+		background-color: white; /* Green */
+		color: #4CAF50;
 	}
-	</style>
+</style>
 </body>
 </html>
