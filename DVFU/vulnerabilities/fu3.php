@@ -44,8 +44,12 @@
                     }
 
                     }
-                    echo '<form method=POST enctype="multipart/form-data" action=""><label for="file-upload" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Custom Upload</label><input type="file" name="files" class="custom-file-input"></form><br/><br/>';
-                ?>
+                    //echo '<form method=POST enctype="multipart/form-data" action=""><label for="file-upload" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Custom Upload</label><input type="file" name="files" class="custom-file-input"></form><br/><br/>';
+            ?>
+			<form enctype="multipart/form-data" action="fu3.php" method="POST">
+                <input name="files" type="file"class="custom-file-input"/><br/>
+                <input type="submit" value="Upload File" />
+			</form>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
             </div>
