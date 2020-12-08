@@ -53,7 +53,7 @@
           </div>
 		  <div class="shell">
 			<?php
-			if isset($_FILES) {
+			if (isset($_FILES)) {
 			echo "Mode debug info:<pre>";
 			print_r($_FILES);
 			echo "</pre>";
