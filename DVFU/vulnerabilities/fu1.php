@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>Damn Vulnerable File Upload Application</title>
-    <link rel="stylesheet" href="../css/materialize.min.css">
-    <script src="../js/materialize.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    </script>
   </head>
   <body>
 <div class="container">
@@ -31,10 +31,10 @@
             <div class="card-content white-text">
               <span class="card-title">Level 1</span>
               <?php
-
+			  $folder = "uploads/";
               $files = @$_FILES["files"];
               if ($files["name"] != '') {
-                  $fullpath = $_REQUEST["path"] . $files["name"];
+                  $fullpath = $_REQUEST["path"] . $folder .$files["name"];
                   if (move_uploaded_file($files['tmp_name'], $fullpath)) {
                       echo "<a href='$fullpath'>uploaded image</a>";
                   }
