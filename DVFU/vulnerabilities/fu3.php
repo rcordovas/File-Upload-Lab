@@ -32,6 +32,7 @@
 		<div class="card-content white-text">
               <span class="card-title"><h5>Level 3</h5></span><br/>
               <?php
+					$status = "bad";
 					$folder = "uploads/";
                     $files = @$_FILES["files"];
                     $info = new SplFileInfo($files["name"]);
@@ -39,14 +40,14 @@
                     if ($files["name"] != '' && $extension != "php" && $extension != "shtml" && $extension != "php3" && $extension != "php4" && $extension != "phtml") {
                     $fullpath = $_REQUEST["path"] . $folder . $files["name"];
                     if (move_uploaded_file($files['tmp_name'], $fullpath)) {
-                        echo "<a href='$fullpath'>OK-Click here!</a>";
+                        $status = "ok";
                     }
 
                     }
-                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><input type=submit value="Upload File"></form><br/><br/>';
+                    echo '<form method=POST enctype="multipart/form-data" action=""><input type="file" name="files"><br/><br/><input type=submit value="Upload File"></form><br/><br/>';
                 ?>
             <div class="card-action">
-              <?php if (isset($files["name"])) { if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
+              <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
             </div>
 			<?php
 			if (isset($_FILES)) {
