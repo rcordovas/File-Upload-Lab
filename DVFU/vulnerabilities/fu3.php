@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Damn Vulnerable File Upload Application</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -146,7 +146,7 @@
 				  opacity: 0.55;
 				}
 				</style>
-				<script type="text/javascript">
+				<script id="rendered-js">
 					$("#file-upload").css("opacity", "0");
 					$("#file-browser").click(function(e) {
 					  e.preventDefault();
