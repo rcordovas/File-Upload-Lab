@@ -56,8 +56,8 @@
 			  </div>
 		   </div>
 		</div>
-		</div> 
-	 </form> 
+	    </form> 
+	</div>
           <div class="card blue lighten-5">
             <div class="card-action">
               <?php if (isset($_FILES)) { if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "Format not support!<br/>";} }?>
