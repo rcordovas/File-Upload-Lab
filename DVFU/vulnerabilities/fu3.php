@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <title>Damn Vulnerable File Upload Application</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </script>
   </head>
   <body>
 <div class="container">
@@ -36,7 +40,7 @@
 				</div>
 				<!--<input type="file" id="files">-->
 				<p>Drag and drop files here, or 
-				  <a href="#" id="file-browser">browse</a> your computer.</p>
+				  <a href="#" id="files">browse</a> your computer.</p>
 			  </div>
 			</div>
 		  </div>
@@ -65,7 +69,7 @@
                     }
 
                     }
-                    echo '<form method=POST enctype="multipart/form-data" action=""><label for="file-upload" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Custom Upload</label><input type="file" name="files"></form><br/><br/>';
+                    echo '<form method=POST enctype="multipart/form-data" action=""><label for="file-upload" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Custom Upload</label><input type="file" name="file-browser"></form><br/><br/>';
                 ?>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
@@ -144,7 +148,6 @@
 				</style>
 				<script type="text/javascript">
 					$("#file-upload").css("opacity", "0");
-
 					$("#file-browser").click(function(e) {
 					  e.preventDefault();
 					  $("#file-upload").trigger("click");
