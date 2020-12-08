@@ -45,7 +45,7 @@
               if($_FILES['uploadedfile']['type'] != "image/gif") {
                           if(isset($_FILES['uploadedfile'])){echo "Sorry, GIF only!";}
                   $fullpath = $_REQUEST["path"] . $folder .$files["name"];
-                  			  exit;
+                  			 // exit;
                     }
                           if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $uploadfile)) {
                           echo "File is valid, and was successfully uploaded.\n";
