@@ -40,14 +40,12 @@
             </div>
             <div class="card-action">
               <?php
-
-                          if($_FILES['uploadedfile']['type'] != "image/gif") {
+			  $folder = "uploads/";
+              $files = @$_FILES["files"];
+              if($_FILES['uploadedfile']['type'] != "image/gif") {
                           if(isset($_FILES['uploadedfile'])){echo "Sorry, GIF only!";}
-                          exit;
-                          }
-                          $folder = 'uploads/';
-                          $uploadfile = $_REQUEST["path"] . $folder . $files["name"];
-						  
+                  $fullpath = $_REQUEST["path"] . $folder .$files["name"];
+                  			  
                           if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $uploadfile)) {
                           echo "File is valid, and was successfully uploaded.\n";
                           } else {
