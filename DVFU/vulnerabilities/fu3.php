@@ -91,7 +91,7 @@
 		transition-duration: 0.4s;
 	}
 
-	.custom-file-input::before:hover {
+	input[type=file]:hover {
 		background-color: white; /* Green */
 		color: #4CAF50;
 	}
