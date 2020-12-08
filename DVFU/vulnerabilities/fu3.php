@@ -44,7 +44,7 @@
                     }
 
                     }
-                    echo '<form method=POST enctype="multipart/form-data" action=""><div class="file-field input-field"><div class="btn"><input type="file" name="files"></div><br/><div class="btn"><input type=submit value="Upload File"></div></div></form><br/><br/>';
+                    echo '<form method=POST enctype="multipart/form-data" action=""><label for="file-upload" class="custom-file-upload"><i class="fa fa-cloud-upload"></i> Custom Upload</label><input type="file" name="files"></form><br/><br/>';
                 ?>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
@@ -56,6 +56,17 @@
 			echo "</pre>";
 			}
 			?>
+			<style>
+			input[type="file"] {
+				display: none;
+			}
+			.custom-file-upload {
+				border: 1px solid #ccc;
+				display: inline-block;
+				padding: 6px 12px;
+				cursor: pointer;
+			}
+			</style>
 			</div>
 		  </div>
      </div>
