@@ -38,7 +38,7 @@
 				  <i class="fas fa-file-alt" data-fa-transform="shrink-2 up-4"></i>
 				  <i class="fas fa-file-pdf" data-fa-transform="shrink-3 down-2 right-6 rotate-45"></i>
 				</div>
-				<!--<input type="file" id="files">-->
+				<!--<input type="file" id="file-upload">-->
 				<p>Drag and drop files here, or 
 				  <a href="#" id="files">browse</a> your computer.</p>
 			  </div>
