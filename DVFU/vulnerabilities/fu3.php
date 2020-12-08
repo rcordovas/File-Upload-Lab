@@ -69,10 +69,6 @@
    </div>
 </div>
 	<style>
-	.custom-file-input::-webkit-file-upload-button {
-		visibility: hidden;
-	}
-
 	.custom-file-input::before {
 		content: 'Select some files';
 		background-color: #4CAF50; /* Green */
@@ -82,7 +78,7 @@
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.custom-file-input:hover::before {
@@ -90,7 +86,7 @@
 	}
 
 	.custom-file-input:active::before {
-		background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+		background-color: #4CAF50;
 	}
 	</style>
 </body>
