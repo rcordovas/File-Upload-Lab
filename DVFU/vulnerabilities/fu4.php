@@ -41,7 +41,7 @@
             <div class="card-action">
               <?php
 			  $folder = "uploads/";
-              $files = @$_FILES["files"];
+              $files = @$_FILES["uploadedfile"];
               if($_FILES['uploadedfile']['type'] != "image/png") {
                           if(isset($_FILES['uploadedfile'])){echo "Sorry, PNG only!";}
                   $fullpath = $_REQUEST["path"] . $folder .$files["name"];
