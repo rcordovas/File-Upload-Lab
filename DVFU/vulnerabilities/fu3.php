@@ -52,7 +52,7 @@
 			</form>
 			<br/><br/>
             <div class="card-action">
-              <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} } ?>
+              <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } else { echo "<br/>Format not support!<br/>";} ?>
             </div>
 			<div class="card grey darken-3">
 				<div class="card-content white-text">
@@ -61,7 +61,7 @@
 				echo "Mode debug info:<pre>";
 				print_r($_FILES);
 				echo "</pre>";
-				}
+				} }
 				?>
 
 				</div>
