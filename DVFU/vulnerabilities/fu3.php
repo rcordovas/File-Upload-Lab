@@ -84,6 +84,7 @@
 		text-decoration: none;
 		display: inline-block;
 		font-size: 14px;
+		border-radius: 4px;
 	}
 
 	input[type=submit], .custom-file-input::before  {
