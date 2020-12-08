@@ -26,7 +26,7 @@
 
      <div class="col s9">
        <h3>Damn Vulnerable File Upload</h3>
-       <b>Description</b>
+       <b>Description.</b>
        <p>-Goal for this level is about to upload a file.This program only allows to upload GIF images.</p>
        <div class="card  teal lighten-1">
             <div class="card-content white-text">
