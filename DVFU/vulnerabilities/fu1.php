@@ -46,14 +46,15 @@
               ?>
             </div>
             <div class="card-action">
-              <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; } ?>
+              <?php if($fullpath!= '') { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\">Uploaded</a>"; 
+
+			echo "<br/>Mode debug info:<pre>";
+			print_r(@$_FILES);
+			echo "</pre>";
+
+				  } ?>
             </div>
           </div>
-			<?php
-			echo "Mode debug info:<pre>";
-			print_r($_FILES);
-			echo "</pre>";
-			?>
      </div>
 
    </div>
