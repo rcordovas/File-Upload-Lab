@@ -47,13 +47,13 @@
                   $fullpath = $_REQUEST["path"] . $folder .$files["name"];
                   			 // exit;
                     }
-                          if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $uploadfile)) {
+                          if (move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $fullpath)) {
                           echo "File is valid, and was successfully uploaded.\n";
                           } else {
                           echo "File uploading failed.\n";
                           }
                   ?>
-              <?php if($uploadfile!= '') { echo "<a href=\"$uploadfile\">Uploaded</a>"; } ?>
+              <?php if($fullpath!= '') { echo "<a href=\"$fullpath\">Uploaded</a>"; } ?>
             </div>
 						<?php
 			echo "Mode debug info:<pre>";
