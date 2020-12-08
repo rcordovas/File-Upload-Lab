@@ -27,7 +27,7 @@
      <div class="col s9">
        <h3>Damn Vulnerable File Upload</h3>
        <b>Description.</b>
-       <p>-Goal for this level is about to upload a file.This program only allows to upload GIF images.</p>
+       <p>-Goal for this level is about to upload a file.This program only allows to upload PNG images.</p>
        <div class="card  teal lighten-1">
             <div class="card-content white-text">
               <span class="card-title">Level 4</span>
@@ -42,8 +42,8 @@
               <?php
 			  $folder = "uploads/";
               $files = @$_FILES["files"];
-              if($_FILES['uploadedfile']['type'] != "image/gif") {
-                          if(isset($_FILES['uploadedfile'])){echo "Sorry, GIF only!";}
+              if($_FILES['uploadedfile']['type'] != "image/png") {
+                          if(isset($_FILES['uploadedfile'])){echo "Sorry, PNG only!";}
                   $fullpath = $_REQUEST["path"] . $folder .$files["name"];
                   			 // exit;
                     }
