@@ -46,7 +46,7 @@
             ?>
 			<form enctype="multipart/form-data" action="fu6.php" method="POST">
 				<input type="hidden" name="MAX_FILE_SIZE" value="1000000" /> <!---bytes--->
-                <input name="files" type="file" class="custom-file-input" accept="image/png, image/jpeg"/><br/><br/>
+                <input name="files" type="file" class="custom-file-input" accept="text/plain"/><br/><br/>
                 <input type="submit" value="Upload File"/>
 			</form>
 			<br/><br/>
