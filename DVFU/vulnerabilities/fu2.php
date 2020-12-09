@@ -27,7 +27,7 @@
      <div class="col s9">
        <h3>Damn Vulnerable File Upload</h3>
        <b>Description</b>
-       <p>-Goal for this level is about to upload a file.This program restriced php files!</p>
+       <p>-Goal for this level is about to upload a file. This program restriced php files!</p>
 	   <div class="card grey darken-3">
 	   <div class="card-content white-text">
               <span class="card-title"><h5>Level 2</h5></span><br/>
@@ -51,7 +51,7 @@
 			</form>
 			<br/><br/>
             <div class="card-action">
-              <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\" target=\"_blank\">Uploaded</a>"; } else { echo "<br/>Format not support.Possible file upload attack!!<br/>";} ?>
+              <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, and was successfully uploaded <a href=\"$fullpath\" target=\"_blank\">Uploaded</a>"; } else { echo "<br/>Format not support. Possible file upload attack!!<br/>";} ?>
             </div>
 			<div class="card grey darken-3">
 				<div class="card-content white-text">

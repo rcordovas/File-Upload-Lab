@@ -37,7 +37,7 @@
                     $files = @$_FILES["files"];
                     $info = new SplFileInfo($files["name"]);
                     $extension=($info->getExtension());
-                    if ($files["name"] != '' && $extension != "php" && $extension != "shtml" && $extension != "php3" && $extension != "php4" && $extension != "phtml") {
+                    if ($files["name"] != '' && $extension != "php" && $extension != "php3" && $extension != "php4" && $extension != "php7") {
                     $fullpath = $_REQUEST["path"] . $folder . $files["name"];
                     if (move_uploaded_file($files['tmp_name'], $fullpath)) {
                         $status = "ok";
