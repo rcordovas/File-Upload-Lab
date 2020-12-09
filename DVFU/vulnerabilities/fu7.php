@@ -61,17 +61,15 @@
 				print_r($_FILES);
 				echo "</pre>";
 				} }
+				if (isset($_GET['file'])) {	
 				?>
-				<hr>
+				</div>
+			</div>
 				<?php
-				if (isset($_GET['file'])) {
 					echo $_GET['file'] . "<br/>";
 					print_r(file_get_contents($_GET['file'] , FILE_USE_INCLUDE_PATH));
 				}
 				?>
-
-				</div>
-		  </div>
      </div>
    </div>
 </div>
