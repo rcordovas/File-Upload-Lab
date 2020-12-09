@@ -41,6 +41,7 @@
 						$fullpath = $_REQUEST["path"] . $folder . $files["name"];
 						if (move_uploaded_file($files['tmp_name'], $fullpath)) {
 							$status = "ok";
+							echo $_FILES['files']['type'];
 						}
                     //}
             ?>
