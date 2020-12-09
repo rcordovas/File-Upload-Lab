@@ -27,7 +27,7 @@
      <div class="col s9">
        <h3>Damn Vulnerable File Upload</h3>
        <b>Description</b>
-       <p>-Goal for this level is about to upload a file png or jpeg. This time we used getimangesize() for uploading!</p>
+       <p>-Goal for this level is about to upload a file png or jpeg. The maximum file size is 1MB!</p>
 		<div class="card grey darken-3">
 		<div class="card-content white-text">
               <span class="card-title"><h5>Level 6</h5></span><br/>
@@ -38,11 +38,12 @@
                     $info = new SplFileInfo($files["name"]);
                     $extension=($info->getExtension());
                     if($_FILES['files']['type'] != "image/png" || $_FILES['files']['type'] != "image/jpeg") {
-                    $fullpath = $_REQUEST["path"] . $folder . $files["name"];
-                    if (move_uploaded_file($files['tmp_name'], $fullpath)) {
-                        $status = "ok";
-                    }
-
+					if($_FILES['files']['size'] <= 1000000) {
+						$fullpath = $_REQUEST["path"] . $folder . $files["name"];
+						if (move_uploaded_file($files['tmp_name'], $fullpath)) {
+							$status = "ok";
+						}
+					}
                     }
             ?>
 			<form enctype="multipart/form-data" action="fu6.php" method="POST">
