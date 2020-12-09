@@ -52,9 +52,8 @@
 			<br/><br/>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, You can see the content of the uploaded file <a href=\"?file=./uploads/".$files["name"]."\">here</a>"; } else { echo "<br/>Format not support!<br/>";} ?>
-            </div>
-			<div class="card grey darken-3">
-				<div class="card-content white-text">
+
+				<div class="card-content grey-text">
 				<?php
 				if (isset($_FILES)) {
 				echo "Mode debug info:<pre>";
