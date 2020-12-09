@@ -71,12 +71,14 @@
 	<div class="card light-blue darken-3">
 		<div class="card-content white-text">
 			<?php
-			echo $_GET['file'] . "<br/>";
+				echo $_GET['file'] . "<br/>";
 				print_r(file_get_contents($_GET['file'] , FILE_USE_INCLUDE_PATH));
 			}
 			?>
 		</div>
-    </div> 
+    </div>
+	</div>
+</div>
 </div>
 <style>
 	.custom-file-input::-webkit-file-upload-button {
