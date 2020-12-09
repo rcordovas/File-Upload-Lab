@@ -52,8 +52,6 @@
 			<br/><br/>
             <div class="card-action">
               <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, You can see the content of the uploaded file <a href=\"?file=./uploads/".$files["name"]."\">here</a>"; } else { echo "<br/>Format not support!<br/>";} ?>
-
-				<div class="card-content grey-text">
 				<?php
 				if (isset($_FILES)) {
 				echo "Mode debug info:<pre>";
@@ -62,7 +60,6 @@
 				} }
 				if (isset($_GET['file'])) {	
 				?>
-				</div>
 			</div>
 		</div>
 	</div>
