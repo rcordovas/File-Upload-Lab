@@ -38,7 +38,7 @@
 					$blacklist = array(".php",".html",".shtml",".phtml", ".php3", ".php4",".php7");
 					foreach ($blacklist as $item) {
 						if(preg_match("/$item\$/", $_FILES['files']['name'])) {
-							if(isset($_FILES['files'])){$status = "bad"; //echo "We do not allow HTML , PHP files\n";}
+							if(isset($_FILES['files'])){$status = "bad";} //echo "We do not allow HTML , PHP files\n";}
 							//exit;
 						} else {
 							$fullpath = $_REQUEST["path"] . $folder . $files["name"];
