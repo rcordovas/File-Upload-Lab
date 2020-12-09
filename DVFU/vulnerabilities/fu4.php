@@ -37,13 +37,12 @@
                     $files = @$_FILES["files"];
                     $info = new SplFileInfo($files["name"]);
                     $extension=($info->getExtension());
-                    if($_FILES['files']['type'] != "image/png") {
-                    $fullpath = $_REQUEST["path"] . $folder . $files["name"];
-                    if (move_uploaded_file($files['tmp_name'], $fullpath)) {
-                        $status = "ok";
-                    }
-
-                    }
+                    //if($_FILES['files']['type'] != "image/png") {
+						$fullpath = $_REQUEST["path"] . $folder . $files["name"];
+						if (move_uploaded_file($files['tmp_name'], $fullpath)) {
+							$status = "ok";
+						}
+                    //}
             ?>
 			<form enctype="multipart/form-data" action="fu4.php" method="POST">
                 <input name="files" type="file" class="custom-file-input" accept="image/png"/><br/><br/>
