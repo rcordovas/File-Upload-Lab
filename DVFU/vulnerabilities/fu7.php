@@ -51,7 +51,7 @@
 			</form>
 			<br/><br/>
             <div class="card-action">
-              <?php if (isset($files["name"])) { if($status == "ok") { echo "File is valid, You can see the content of the uploaded file <a href=\"?file=$fullpath\">echo file_get_contents(\"" . $_GET['file'] . "\");</a>"; } else { echo "<br/>Format not support!<br/>";} ?>
+              <?php if (isset($files["name"])) { if($status == "ok") { echo $files["name"]."File is valid, You can see the content of the uploaded file <a href=\"?file=./uploads/$files["name"]\">echo file_get_contents(\"" . $_GET['file'] . "\");</a>"; } else { echo "<br/>Format not support!<br/>";} ?>
             </div>
 			<div class="card grey darken-3">
 				<div class="card-content white-text">
