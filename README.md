@@ -20,3 +20,6 @@ I collected all of file upload bypass techniques. You can found many articles fo
 
 Thin Ba Shane (@art0flunam00n) 
 https://twitter.com/art0flunam00n
+
+<b>Contribution</b>
+@rcordovas
